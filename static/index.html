@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local AI Workspace</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="header-title">
+        <span class="material-symbols-outlined logo-icon">auto_awesome</span>
+        <span>Local AI Agent</span>
+      </div>
+      <div class="model-selector-wrapper">
+        <span class="material-symbols-outlined select-icon">memory</span>
+        <select id="model-select">
+          <option value="">モデル読み込み中...</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Chat Container -->
+    <main id="chat-box" class="chat-box">
+      <div class="welcome-screen" id="welcome-screen">
+        <div class="welcome-icon">
+          <span class="material-symbols-outlined">sparkles</span>
+        </div>
+        <h1>何かお手伝いできることはありますか？</h1>
+        <p>ローカルLLMを使ってコード生成や文章作成を行えます。</p>
+      </div>
+    </main>
+
+    <!-- Input Footer -->
+    <footer class="input-container">
+      <div class="input-wrapper">
+        <textarea id="user-input" placeholder="メッセージを入力..." rows="1"></textarea>
+        <button id="send-btn" aria-label="送信">
+          <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+      </div>
+      <div class="footer-note">ローカル環境で動作中（Ollama API）</div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
