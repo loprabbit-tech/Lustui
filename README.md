@@ -7,7 +7,7 @@ LustUI は、Ollamaと連携してローカル環境で自動開発・コマン�
 PowerShellを開き、以下のコマンドを1行実行するだけでインストールおよび環境構築が完了します。
 
 ```powershell
-irm https://raw.githubusercontent.com/ユーザー名/Lustui/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/loprabbit-tech/Lustui/main/install.ps1 | iex
 ```
 
 > **Note**: 管理者権限は不要です。ユーザー環境（`%LOCALAPPDATA%\Lustui`）に自動配置され、PATHの追加と `.lustuiprj` ファイルの関連付けが行われます。
